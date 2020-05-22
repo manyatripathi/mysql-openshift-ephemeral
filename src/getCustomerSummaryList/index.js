@@ -1,3 +1,15 @@
+require("appdynamics").profile({
+ controllerHostName: 'bear202005200038494.saas.appdynamics.com',
+ controllerPort: 443,
+ 
+ // If SSL, be sure to enable the next line
+ controllerSslEnabled: true,
+ accountName: 'bear202005200038494',
+ accountAccessKey: 'phnd8kl78wwf',
+ applicationName: 'My Web Application On Openshift',
+ tierName: 'Backend Tier',
+ nodeName: 'process' // The controller will automatically append the node name with a unique number
+});
 const version = '1.0';
 
 const express = require('express');

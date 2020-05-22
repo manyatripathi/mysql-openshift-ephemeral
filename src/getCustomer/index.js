@@ -1,5 +1,15 @@
 const version = '1.0';
 
+require("appdynamics").profile({
+  controllerHostName: 'bear202005200038494.saas.appdynamics.com',
+  controllerPort: 443, 
+  controllerSslEnabled: false,  // Set to true if controllerPort is SSL
+  accountName: 'bear202005200038494',
+  accountAccessKey: 'phnd8kl78wwf', //required
+  applicationName: 'My Web Application On Openshift',
+  tierName: 'Backend Tier' 
+ });
+
 const express = require('express');
 const app = express();
 const cors = require('cors');

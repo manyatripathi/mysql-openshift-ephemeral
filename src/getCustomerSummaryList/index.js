@@ -8,7 +8,7 @@ require("appdynamics").profile({
  accountAccessKey: 'phnd8kl78wwf',
  applicationName: 'My Web Application On Openshift',
  tierName: 'Backend Tier',
- nodeName: 'process' // The controller will automatically append the node name with a unique number
+ nodeName: 'second' // The controller will automatically append the node name with a unique number
 });
 const version = '1.0';
 

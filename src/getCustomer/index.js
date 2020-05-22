@@ -1,6 +1,4 @@
-const version = '1.0';
-
-const appdynamics = require("appdynamics").profile({
+require("appdynamics").profile({
   controllerHostName: 'bear202005200038494.saas.appdynamics.com',
   controllerPort: 443, 
   controllerSslEnabled: false,  // Set to true if controllerPort is SSL
@@ -10,6 +8,7 @@ const appdynamics = require("appdynamics").profile({
   tierName: 'Backend Tier' 
  });
 
+const version = '1.0';
 const express = require('express');
 const app = express();
 const cors = require('cors');

@@ -1,6 +1,6 @@
 const version = '1.0';
 
-require("appdynamics").profile({
+const appdynamics = require("appdynamics").profile({
   controllerHostName: 'bear202005200038494.saas.appdynamics.com',
   controllerPort: 443, 
   controllerSslEnabled: false,  // Set to true if controllerPort is SSL

@@ -6,7 +6,7 @@ require("appdynamics").profile({
  controllerSslEnabled: true,
  accountName: 'bear202005200038494',
  accountAccessKey: 'phnd8kl78wwf',
- applicationName: 'My Web Application On Openshift',
+ applicationName: 'AppDynamics Demo',
  tierName: 'Backend Tier',
  nodeName: 'first' // The controller will automatically append the node name with a unique number
 });
